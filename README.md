@@ -18,6 +18,39 @@ python3 -m http.server 4173
 python3 -m http.server 8080
 ```
 
+## Deploy
+
+GitHub 저장소에 쓰기 권한이 있는 계정으로 인증한 뒤 업로드합니다.
+
+```sh
+gh auth login
+git remote add origin https://github.com/tellamon/dh-solution-homepage.git
+git push -u origin main
+```
+
+이미 `origin`이 등록되어 있으면 `git remote add` 대신 아래 명령으로 확인합니다.
+
+```sh
+git remote -v
+```
+
+GitHub Pages는 저장소 화면에서 `Settings` → `Pages`로 이동한 뒤 아래처럼 설정합니다.
+
+- Source: `Deploy from a branch`
+- Branch: `main`
+- Folder: `/ (root)`
+
+CLI 권한이 있으면 아래 API 호출로도 설정할 수 있습니다.
+
+```sh
+gh api \
+  --method POST \
+  repos/tellamon/dh-solution-homepage/pages \
+  --input - <<'JSON'
+{"source":{"branch":"main","path":"/"}}
+JSON
+```
+
 ## Routes
 
 - `/`
