@@ -34,7 +34,7 @@ git push -u origin main
 git remote -v
 ```
 
-GitHub Pages는 저장소 화면에서 `Settings` → `Pages`로 이동한 뒤 아래처럼 설정합니다.
+GitHub Pages 설정은 저장소 관리자 권한이 필요할 수 있습니다. 저장소 화면에서 `Settings` → `Pages`로 이동한 뒤 아래처럼 설정합니다.
 
 - Source: `Deploy from a branch`
 - Branch: `main`
