@@ -2,6 +2,10 @@
 
 Wix로 구축되어 있던 `www.dhsolu.com`의 정적 페이지를 GitHub Pages에서 서비스할 수 있도록 복제한 정적 홈페이지입니다.
 
+## 배포 URL
+https://tellamon.github.io/dh-solution-homepage
+추후에 https://dhsolu.com 으로 연결되어야 함.
+
 ## Local Test
 
 별도 빌드 과정은 없습니다. 저장소 루트에서 정적 웹 서버를 실행한 뒤 브라우저에서 확인합니다.
