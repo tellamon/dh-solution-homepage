@@ -6,6 +6,32 @@ Wix로 구축되어 있던 `www.dhsolu.com`의 정적 페이지를 GitHub Pages�
 https://tellamon.github.io/dh-solution-homepage
 추후에 https://dhsolu.com 으로 연결되어야 함.
 
+## Custom Domain
+
+GitHub Pages의 커스텀 도메인은 `dhsolu.com`입니다. 저장소 루트의 `CNAME` 파일은 아래 한 줄만 포함해야 합니다.
+
+```txt
+dhsolu.com
+```
+
+GoDaddy DNS에는 아래 레코드를 설정합니다.
+
+| Type | Name | Value | TTL |
+| --- | --- | --- | --- |
+| A | @ | 185.199.108.153 | 기본값 |
+| A | @ | 185.199.109.153 | 기본값 |
+| A | @ | 185.199.110.153 | 기본값 |
+| A | @ | 185.199.111.153 | 기본값 |
+| CNAME | www | tellamon.github.io | 기본값 |
+
+기존 Wix 연결 레코드가 남아 있으면 GitHub Pages 인증서 발급이 실패할 수 있으므로, `@`에 대한 다른 `A`, `AAAA`, `ALIAS`, `ANAME` 레코드와 `www`의 다른 `CNAME` 레코드는 제거합니다.
+
+DNS 전파 후 GitHub 저장소의 `Settings` → `Pages`에서 아래처럼 확인합니다.
+
+- Custom domain: `dhsolu.com`
+- Enforce HTTPS: 활성화
+- 접속 URL: `https://dhsolu.com`
+
 ## Local Test
 
 별도 빌드 과정은 없습니다. 저장소 루트에서 정적 웹 서버를 실행한 뒤 브라우저에서 확인합니다.
