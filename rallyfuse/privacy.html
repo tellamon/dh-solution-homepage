@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>랠리퓨즈 개인정보처리방침 · RallyFuse Privacy Policy</title>
+<style>
+  body { font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; max-width: 760px;
+         margin: 0 auto; padding: 40px 20px 80px; line-height: 1.8; color: #222; }
+  h1 { font-size: 1.6rem; } h2 { font-size: 1.15rem; margin-top: 2em; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; vertical-align: top; }
+  th { background: #f5f5f5; }
+  .muted { color: #777; font-size: 0.9rem; }
+  .language { margin-top: 4em; padding-top: 2em; border-top: 2px solid #ddd; }
+</style>
+</head>
+<body>
+<h1>랠리퓨즈 개인정보처리방침</h1>
+<p class="muted">시행일: 2026년 11월 5일 · 개발사: 디에이치솔루션(주)</p>
+
+<p>디에이치솔루션(주)(이하 “회사”)는 랠리퓨즈(RallyFuse) 앱(이하 “앱”) 이용자의 개인정보를 소중히 여기며,
+「개인정보 보호법」 등 관련 법령을 준수합니다. 본 방침은 앱이 정보를 어떻게 처리하는지 설명합니다.</p>
+
+<h2>1. 회사가 처리하는 정보</h2>
+<p>앱에는 이름이나 이메일을 입력하는 회원가입이 없습니다. 무료 사용 시간과 친구 초대를 관리하기 위해 아래 정보만 서버로 전송합니다.</p>
+<table>
+  <tr><th>항목</th><th>목적</th></tr>
+  <tr><td>기기 식별값(iOS: 앱이 만든 키체인 UUID, Android: ANDROID_ID). 서버에는 해시값으로만 저장됩니다.</td><td>기기별 사용량과 친구 초대 기록 관리</td></tr>
+  <tr><td>Firebase 익명 사용자 ID, App Check 토큰</td><td>서버 호출 인증, 정상 앱 확인</td></tr>
+  <tr><td>분석한 영상 파일의 SHA-256 해시값</td><td>같은 영상을 한 달에 한 번만 계산. 해시값으로 영상 내용을 볼 수는 없습니다.</td></tr>
+  <tr><td>분석한 영상의 길이</td><td>월 사용량 계산</td></tr>
+  <tr><td>내 초대 코드, 입력한 친구 코드, 초대 상태와 보상 기록, 첫 영상을 추가한 시각</td><td>친구 초대 보상 지급</td></tr>
+</table>
+
+<h2>2. 기기에만 저장되는 정보</h2>
+<p><strong>영상은 이용자의 기기 밖으로 전송되지 않습니다.</strong> 영상 분석, 랠리 편집, 점수, 프로필은 기기 안에서 처리되고 저장됩니다.
+서버에서 받은 사용 시간과 아직 전송하지 못한 사용 기록, 기기 식별값도 기기에 저장되며 영상 내용을 담고 있지 않습니다.</p>
+<p>앱은 광고, 분석, 위치 SDK를 사용하지 않습니다. 앱을 실행할 때 최신 버전 정보를 읽어 오지만, 이때 위 항목은 전송하지 않습니다.</p>
+
+<h2>3. 처리 위탁 및 국외 이전</h2>
+<table>
+  <tr><th>수탁자</th><th>업무</th><th>처리 위치</th></tr>
+  <tr><td>Google LLC (Firebase)</td><td>서버 함수 실행, 데이터 저장, 익명 인증, 앱 확인</td><td>서버 함수와 데이터베이스는 대한민국 서울 리전(asia-northeast3)을 사용합니다. 익명 인증과 앱 확인은 미국 등 Google이 운영하는 국가에서 처리될 수 있습니다.</td></tr>
+</table>
+<p>국외에서 처리될 수 있는 항목은 Firebase 익명 사용자 ID와 App Check 토큰이며, 앱이 서버를 호출할 때 네트워크를 통해 전송됩니다.
+보유 기간은 위탁 계약 종료 시까지 또는 Google의 정책을 따릅니다. 이 전송을 원하지 않으면 앱 사용을 중단하고 아래 문의처로 기록 삭제를 요청할 수 있습니다.
+앱 확인 과정에서 iOS는 Apple의 App Attest·DeviceCheck를, Android는 Google Play Integrity를 사용합니다.</p>
+<p>자세한 내용: <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 안내</a>,
+<a href="https://policies.google.com/privacy">Google 개인정보처리방침</a></p>
+
+<h2>4. 구독 결제</h2>
+<p>구독 결제는 App Store 또는 Google Play가 처리합니다. 회사는 카드 번호 등 결제 정보를 받지 않습니다.</p>
+
+<h2>5. 앱 접근 권한</h2>
+<table>
+  <tr><th>권한</th><th>사용 목적</th></tr>
+  <tr><td>카메라</td><td>앱에서 경기 영상을 촬영합니다.</td></tr>
+  <tr><td>마이크</td><td>촬영하는 영상의 소리를 함께 녹음합니다.</td></tr>
+  <tr><td>사진(iOS)</td><td>영상을 불러오고 완성한 영상을 사진 앱에 저장합니다.</td></tr>
+  <tr><td>알림(Android)</td><td>앱이 백그라운드에 있을 때 분석과 저장 진행 상태를 표시합니다.</td></tr>
+</table>
+<p>권한은 기기 설정에서 언제든 끌 수 있습니다. 권한을 허용하지 않으면 해당 기능을 사용할 수 없습니다. 앱은 연락처, 위치 또는 ATT 추적 권한을 요청하지 않습니다.</p>
+
+<h2>6. 공유</h2>
+<p>영상은 이용자가 직접 공유를 선택했을 때만, 선택한 앱으로 전달됩니다. 전달된 뒤에는 그 앱의 정책을 따릅니다.
+회사는 서버 정보를 제3자에게 판매하거나 제공하지 않습니다. 다만 법령에 따라 요구되는 경우는 예외로 합니다.</p>
+
+<h2>7. 보유 및 파기</h2>
+<p>서버 기록은 서비스를 제공하는 동안 보관하며, 이용자가 삭제를 요청하거나 서비스가 종료되면 지체 없이 파기합니다.
+기기에 저장된 앱 데이터는 앱을 제거할 때 삭제됩니다. 다만 iPhone의 기기 식별값과 사용 기록은 키체인에 저장되어 앱을 제거한 뒤에도 남을 수 있습니다.</p>
+
+<h2>8. 이용자의 권리</h2>
+<p>이용자는 자신의 정보에 대한 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. 이메일로 요청할 때 앱의 친구 초대 화면에 있는 <strong>내 코드</strong>를 함께 보내 주시면 해당 기기의 기록을 찾을 수 있습니다.</p>
+
+<h2>9. 안전성 확보 조치</h2>
+<p>앱과 서버 사이의 통신은 암호화되어 전송되며, 기기 식별값은 해시값으로 저장합니다. 서버 데이터는 앱에서 직접 읽거나 쓸 수 없고, 인증된 서버 함수로만 처리합니다.</p>
+
+<h2>10. 아동의 개인정보</h2>
+<p>앱은 아동을 대상으로 설계되지 않았으며 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+<h2>11. 문의처</h2>
+<p>개인정보 관련 문의는 아래로 연락해 주세요.</p>
+<ul>
+  <li>회사: 디에이치솔루션(주)</li>
+  <li>주소: 광주광역시 남구 송암로 60 광주CGI센터 3층</li>
+  <li>이메일: admin@dhsolu.com</li>
+</ul>
+
+<h2>12. 고지 의무</h2>
+<p>본 방침이 변경되는 경우 시행 7일 전부터 본 페이지를 통해 공지합니다.</p>
+
+<div class="language" lang="en">
+<h1>RallyFuse Privacy Policy</h1>
+<p class="muted">Effective November 5, 2026 · Developer: DHSolu Co., Ltd.</p>
+
+<p>DHSolu Co., Ltd. (“we”) respects the privacy of people who use RallyFuse (the “app”). This policy explains how information is handled.</p>
+
+<h2>1. Information we process</h2>
+<p>The app has no sign-up that asks for your name or email. To manage free usage and friend invites, it sends only the following to our server.</p>
+<table>
+  <tr><th>Item</th><th>Purpose</th></tr>
+  <tr><td>Device identifier (iOS: a Keychain UUID created by the app; Android: ANDROID_ID). The server stores only a hash of it.</td><td>Tracking usage and invite records per device</td></tr>
+  <tr><td>Firebase anonymous user ID and App Check token</td><td>Authenticating server calls and confirming a genuine app</td></tr>
+  <tr><td>SHA-256 hash of each analyzed video file</td><td>Counting the same video only once a month. A hash cannot reveal what is in a video.</td></tr>
+  <tr><td>Length of each analyzed video</td><td>Calculating monthly usage</td></tr>
+  <tr><td>Your invite code, the friend code you enter, invite status and reward records, and when you added your first video</td><td>Paying friend invite rewards</td></tr>
+</table>
+
+<h2>2. Information that stays on your device</h2>
+<p><strong>Your videos never leave your device.</strong> Video analysis, rally edits, scores, and profiles are processed and stored on your device.
+Usage figures received from the server, usage records not yet sent, and the device identifier are also stored on your device and contain no video content.</p>
+<p>The app uses no advertising, analytics, or location SDKs. It reads the latest version information at launch, but sends none of the items above when it does.</p>
+
+<h2>3. Service providers and transfers abroad</h2>
+<table>
+  <tr><th>Provider</th><th>Service</th><th>Location</th></tr>
+  <tr><td>Google LLC (Firebase)</td><td>Running server functions, storing data, anonymous authentication, app verification</td><td>Server functions and the database use the Seoul, Republic of Korea region (asia-northeast3). Anonymous authentication and app verification may be processed in the United States and other countries where Google operates.</td></tr>
+</table>
+<p>The items that may be processed abroad are the Firebase anonymous user ID and App Check token, sent over the network when the app calls the server.
+They are retained until the service agreement ends or as set out in Google’s policies. If you do not want this transfer, stop using the app and ask us to delete your records using the contact below.
+For app verification, iOS uses Apple’s App Attest and DeviceCheck, and Android uses Google Play Integrity.</p>
+<p>Learn more: <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>,
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+
+<h2>4. Subscription payments</h2>
+<p>Subscription payments are handled by the App Store or Google Play. We do not receive card numbers or other payment details.</p>
+
+<h2>5. App permissions</h2>
+<table>
+  <tr><th>Permission</th><th>Purpose</th></tr>
+  <tr><td>Camera</td><td>Recording match video in the app.</td></tr>
+  <tr><td>Microphone</td><td>Recording sound with the video.</td></tr>
+  <tr><td>Photos (iOS)</td><td>Opening videos and saving finished videos to Photos.</td></tr>
+  <tr><td>Notifications (Android)</td><td>Showing analysis and saving progress while the app is in the background.</td></tr>
+</table>
+<p>You can turn permissions off at any time in your device settings. If you deny a permission, the related feature will be unavailable. The app does not request contacts, location, or ATT tracking permission.</p>
+
+<h2>6. Sharing</h2>
+<p>A video is passed to another app only when you choose to share it, and that app’s policies then apply.
+We do not sell or provide server data to third parties, except where required by law.</p>
+
+<h2>7. Retention and deletion</h2>
+<p>Server records are kept while we provide the service and are destroyed without delay when you request deletion or the service ends.
+App data stored on your device is removed when you uninstall the app. On iPhone, however, the device identifier and usage records are stored in the Keychain and may remain after the app is removed.</p>
+
+<h2>8. Your rights</h2>
+<p>You may ask to access, correct, delete, or stop the processing of your information. When you email us, please include <strong>your code</strong> from the app’s friend invite screen so we can find the records for your device.</p>
+
+<h2>9. Security</h2>
+<p>Traffic between the app and the server is encrypted, and device identifiers are stored as hashes. The app cannot read or write server data directly; it is handled only by authenticated server functions.</p>
+
+<h2>10. Children’s privacy</h2>
+<p>The app is not designed for children and does not knowingly collect children’s personal information.</p>
+
+<h2>11. Contact</h2>
+<ul>
+  <li>Company: DHSolu Co., Ltd.</li>
+  <li>Address: 3F, Gwangju CGI Center, 60 Songam-ro, Nam-gu, Gwangju, Republic of Korea</li>
+  <li>Email: admin@dhsolu.com</li>
+</ul>
+
+<h2>12. Changes to this policy</h2>
+<p>Changes to this policy will be announced on this page at least seven days before they take effect.</p>
+</div>
+</body>
+</html>
